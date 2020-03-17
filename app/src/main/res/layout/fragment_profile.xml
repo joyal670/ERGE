@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/layout_root">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/account_circle"
+            android:id="@+id/profile_user_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_margin="15dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Name"
+                android:gravity="center"
+                android:id="@+id/profile_name"
+                android:background="@drawable/address_style"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Email"
+                android:gravity="center"
+                android:id="@+id/profile_email"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/address_style"
+                android:enabled="false"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Phonenumber"
+                android:layout_marginTop="15dp"
+                android:enabled="false"
+                android:gravity="center"
+                android:id="@+id/profile_phonenumber"
+                android:background="@drawable/address_style"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/round_button"
+            android:text="update"
+            android:layout_gravity="center"
+            android:id="@+id/profile_Save"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+
+</FrameLayout>

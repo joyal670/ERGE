@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Myorders_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:weightSum="10"
+        android:background="@color/lightgrey">
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:layout_marginTop="?attr/actionBarSize"-->
+<!--        android:background="@color/blue"-->
+<!--        android:id="@+id/rellayouyt">-->
+
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:layout_width="325dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginLeft="40dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="40dp"-->
+<!--            android:background="@drawable/searchbarround"-->
+<!--            android:clickable="true" />-->
+
+
+<!--    </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/odr">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+
+
+                    <TextView
+                        android:id="@+id/current_order_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Current Orders"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/previous_order_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Previous Orders"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/odr"
+                android:orientation="vertical"
+                android:id="@+id/orders">
+
+                <include
+                    layout="@layout/fragment_previous_order_"
+                    android:visibility="gone"
+                    android:id="@+id/previous_order_page"/>
+
+                <include
+                    layout="@layout/fragment_current_order_"
+                    android:visibility="visible"
+                    android:id="@+id/current_order_page"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

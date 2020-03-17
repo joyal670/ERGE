@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.changeAddressActivity"
+    android:background="@color/lightgrey">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Address"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Address Line 1"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_margin="2dp"
+                    android:id="@+id/chgAddraddressLine1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Address Line 2"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_margin="2dp"
+                    android:id="@+id/chgAddraddressLine2"/>
+
+                <TextView
+                    android:id="@+id/chgAddrCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chgAddrState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_margin="2dp"
+                    android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:hint="Country"
+                android:layout_margin="2dp"
+                android:id="@+id/chgAddrCountry"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:hint="Pin code"
+                    android:layout_margin="2dp"
+                    android:id="@+id/chgAddrPincode"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved Address"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/chgAddrListView">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/plus"/>
+
+</RelativeLayout>

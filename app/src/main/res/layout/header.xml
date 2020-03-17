@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#f2f2f2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ERGE"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="#b2b2b2" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="#f2f2f2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/account_circle"
+        android:id="@+id/circularImg"/>
+
+<!--        <ImageButton-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignRight="@id/circularImg"-->
+<!--            android:layout_alignBottom="@id/circularImg"-->
+<!--            android:layout_marginRight="-30dp"-->
+<!--            android:layout_marginBottom="-1dp"-->
+<!--            android:background="#f2f2f2"-->
+<!--            android:onClick="fnimageclick"-->
+<!--            android:id="@+id/imgbtn"-->
+<!--            android:src="@drawable/camera_icon" />-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/blue"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:id="@+id/header_name"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name@gmail.com"
+        android:layout_marginTop="5dp"
+        android:id="@+id/header_email"
+        android:layout_gravity="center"/>
+</LinearLayout>

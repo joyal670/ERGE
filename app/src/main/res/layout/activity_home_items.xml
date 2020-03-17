@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HomeItemsActivity">
+
+<!--    <include-->
+<!--        layout="@layout/app_bar_main"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/app_bar_main"/>-->
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/app"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/currentimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:id="@+id/currentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Philips s1030 wet and dry electric Shaver"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"/>
+
+            <RatingBar
+                android:id="@+id/currentrating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:numStars="5"
+                android:rating="4.5"
+                android:stepSize="0.1" />
+            <TextView
+                android:id="@+id/currentprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:text="$200"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/cartprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 58.00"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/homeorginalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$ 76.00"
+                    android:paddingLeft="10dp"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/homediscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save $ 8 (10%)"
+                    android:paddingLeft="10dp"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/currentstock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Stock"
+                    android:textColor="@color/green"
+                    android:textSize="15sp"
+                  android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="30dp"
+        android:padding="20dp"
+        android:id="@+id/Description">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+<!--            <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical" />-->
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/currentdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Description"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+
+            </ScrollView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/Description"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <Button
+            android:id="@+id/currentBuybtn"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="BUY NOW"
+            android:background="@drawable/round_button_green"/>
+        <Button
+            android:id="@+id/currentCartbtn"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="ADD TO CART"
+            android:background="@drawable/round_button"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

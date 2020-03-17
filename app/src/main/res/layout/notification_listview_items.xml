@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartCardView"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Id"
+                android:textSize="9sp"
+                android:layout_alignParentLeft="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EGAT9904254"
+                android:textAllCaps="true"
+                android:textSize="10sp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/notification_orderId"
+                android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Date"
+                android:textSize="9sp"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2020-03-10"
+                    android:textColor="@color/black"
+                    android:textAllCaps="true"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/notification_orderDate"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/account_circle"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_marginRight="1dp"
+                android:id="@+id/notificationitemImage"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver name"
+                    android:textSize="12sp"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center|left"
+                    android:id="@+id/notification_driver_name"
+                    android:layout_alignParentTop="true"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:id="@+id/notification_reject"
+                    android:background="@drawable/round_button_red"
+                    android:text="Reject"
+                    android:textColor="@color/white"
+                    android:layout_alignParentLeft="true"/>
+
+                    <Button
+                        android:id="@+id/notification_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/round_button"
+                        android:text="Accept" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

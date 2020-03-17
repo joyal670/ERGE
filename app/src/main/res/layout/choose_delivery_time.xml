@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Choose Delivery Time"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:id="@+id/deliverytime"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:orientation="vertical"
+            android:checkedButton="@+id/oneDay">
+
+                <RadioButton
+                    android:id="@+id/oneHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Within 1 hour" />
+
+
+
+            <RadioButton android:id="@+id/twoHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Within 2 hour"
+                android:layout_alignParentLeft="true"/>
+
+
+
+            <RadioButton android:id="@+id/fiveHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Within 5 hour"
+                android:layout_alignParentLeft="true"/>
+
+
+
+
+            <RadioButton android:id="@+id/oneDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Within 1 day"
+                android:layout_alignParentLeft="true" />
+
+
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="+$9.99"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+$7.99"
+                android:textColor="@color/green"
+                android:layout_marginTop="9dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+$5.99"
+                android:textColor="@color/green"
+                android:layout_marginTop="9dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+$0.00"
+                android:textColor="@color/green"
+                android:layout_marginTop="9dp"
+                android:layout_alignParentRight="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Cancel"
+            android:id="@+id/chooseDeliverycancelbtn"
+            android:textColor="@color/white"
+            android:background="@color/grey"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@color/blue"
+            android:text="Place Order"
+            android:id="@+id/chooseDeliverysavebtn"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ERGE</string>
+    <string name="facebook_app_id">628823527884382</string>
+    <string name="fb_login_protocol_scheme">fb628823527884382</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida dui vitae dui rhoncus, eu condimentum elit consequat. Mauris viverra felis vitae dolor sollicitudin consequat. Pellentesque convallis mi ac sagittis posuere. Suspendisse porta, ante at euismod ultrices, neque enim euismod neque, a gravida arcu felis congue ligula. Nam malesuada nec ante in vestibulum. Nunc vitae turpis et libero pellentesque facilisis id sit amet felis. Ut porttitor egestas lectus sollicitudin eleif end. Aliquam ut ultricies lectus. Morbi varius enim non malesuada porttitor. Vivamus id lacus sit amet nunc lobortis iaculis. Sed sapien orci, tincidunt eu felis eget, aliquet commodo tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</string>
+    <string name="loremIpsum">orem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero\'s De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.” The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn\'t distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.  The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it\'s seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</string>
+
+</resources>
