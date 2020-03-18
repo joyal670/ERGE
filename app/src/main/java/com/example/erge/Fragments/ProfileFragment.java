@@ -430,6 +430,7 @@ public class ProfileFragment extends Fragment {
                     email.setText(response.body().getData().getEmail());
                     phonenum.setText(response.body().getData().getPhone());
                     Picasso.get().load(response.body().getData().getProfile_pic()).into(profileimg);
+                    HomeScreenActivity.refreshProfileImage.refresh();
                 }
             }
 
